@@ -5,6 +5,8 @@ import About from './sections/About/About'
 import Power from './sections/Power/Power'
 import Map from './sections/Map/Map'
 import Footer from './sections/Footer/Footer'
+import ImageCarousel from './sections/ImageCarousel/ImageCarousel'
+import GetQuoteSection from './sections/GetQuote/GetQuoteSection'
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <About />
       <Power />
       <Map />
+      <ImageCarousel />
+      <GetQuoteSection />
       <Footer />
     </section>
   )

@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./About.css";
 import AboutAnimation from "../../components/AboutAnimation/AboutAnimation.jsx";

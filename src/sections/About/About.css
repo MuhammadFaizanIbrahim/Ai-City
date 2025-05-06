@@ -4,13 +4,15 @@
   text-align: center;
   height: 60vh;
   width: 100vw;
-  margin-top: -5%;
+  margin-top: 5%;
 }
 
 .aboutContent {
+  position: absolute;
   width: 100vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   z-index: 9;
+  margin-top: 10%;
 }
 
 .aboutContent h2 {
