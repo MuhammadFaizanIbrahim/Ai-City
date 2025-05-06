@@ -1,13 +1,8 @@
-// src/components/SplineAnimation.jsx
+// AboutAnimation.jsx
 import React from 'react';
-import Spline from '@splinetool/react-spline';
+import LazySpline from '../LazySpline';
 
 const SplineAnimationHero = () => {
-  return (
-    <div className="spline-animation">
-      <Spline scene="https://prod.spline.design/9ueUc1HogbTBsbwk/scene.splinecode" />
-    </div>
-  );
+  return <LazySpline scene="https://prod.spline.design/9ueUc1HogbTBsbwk/scene.splinecode" className="spline-animation" />;
 };
-
 export default SplineAnimationHero;

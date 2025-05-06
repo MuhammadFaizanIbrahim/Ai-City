@@ -1,12 +1,8 @@
-import React from 'react'
-import Spline from '@splinetool/react-spline';
+// AboutAnimation.jsx
+import React from 'react';
+import LazySpline from '../LazySpline';
 
 const PowerAnimation = () => {
-  return (
-    <div className="powerSpline-container">
-    <Spline scene="https://prod.spline.design/fuQPCJKO5BOiMxBZ/scene.splinecode" />
-    </div>
-  )
-}
-
-export default PowerAnimation
+  return <LazySpline scene="https://prod.spline.design/fuQPCJKO5BOiMxBZ/scene.splinecode" className="powerSpline-container" />;
+};
+export default PowerAnimation;
