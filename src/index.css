@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=M+PLUS+Rounded+1c&family=Oswald:wght@200..700&display=swap');
+
+body {
+  background-color: black;
+  transition: background-color 0.8s ease-in-out;
+  overflow-x: hidden;
+}
+
+
+@font-face {
+  font-family: 'ClashFont';
+  src: url('/public/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+       url('/public/fonts/ClashDisplay-Variable.woff') format('woff');  
+  font-display: swap;
+}
+
+
+/* .exo {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+
+@media (min-width: 901px) and (max-width: 1550px) {
+  body {
+    overflow-x: hidden;
+  }
+}

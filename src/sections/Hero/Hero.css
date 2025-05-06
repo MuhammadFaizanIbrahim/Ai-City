@@ -1,0 +1,121 @@
+.heroFull{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 4%;
+    /* background-color: antiquewhite; */
+}
+
+.spline-animation {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 2;
+  
+    /* Gradient Fill */
+    background: linear-gradient(90deg, #00f0ff, #ff00c8, #00f0ff);
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Simulated Border using sharp text shadows */
+    text-shadow:
+      1px 0 #00f0ff,
+      -1px 0 #ff00c8,
+      0 1px #00f0ff,
+      0 -1px #ff00c8,
+      1px 1px #00f0ff,
+      -1px -1px #ff00c8;
+  
+    animation: textShine 4s linear infinite;
+  }
+  
+  /* Optional: subtle shine animation */
+  @keyframes textShine {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+
+.heroText p{
+    font-size: 2rem;
+    font-weight: 200;
+    z-index: 2;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    margin-top: -7rem;
+}
+  
+  
+.exploreBtn {
+    position: relative;
+    margin-top: 2rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .exploreBtn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(270deg, #00f0ff, #ff00c8, #00f0ff);
+    background-size: 400% 400%;
+    animation: animatedBorder 4s linear infinite;
+    z-index: -1;
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  
+  /* Optional hover effect */
+  .exploreBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00f0ff, 0 0 20px #ff00c8;
+  }
+  
+  @keyframes animatedBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  
